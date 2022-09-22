@@ -40,23 +40,23 @@ class LinkedList:
         else:
             newNode.next=self.head
             self.head=newNode
-    def insertpos(self,newNode,pos):
-        if pos==0:
-            self.insertbeg(newNode)
-        elif pos<0 or pos>self.lenlist():
-            print("Invalid pos")
-            return
-        else:
-            curnode=self.head
-            curpos=0
-            while(True):
-                if(curpos==pos):
-                    prevnode.next=newNode
-                    newNode.next=curnode
-                    break
-                prevnode=curnode
-                curnode=curnode.next
-                curpos+=1
+    # def insertpos(self,newNode,pos):
+    #     if pos==0:
+    #         self.insertbeg(newNode)
+    #     elif pos<0 or pos>self.lenlist():
+    #         print("Invalid pos")
+    #         return
+    #     else:
+    #         curnode=self.head
+    #         curpos=0
+    #         while(True):
+    #             if(curpos==pos):
+    #                 prevnode.next=newNode
+    #                 newNode.next=curnode
+    #                 break
+    #             prevnode=curnode
+    #             curnode=curnode.next
+    #             curpos+=1
         
     def printList(self):
         header=self.head
@@ -77,5 +77,5 @@ sll.insertend(firstNode)
 secondNode=Node(20)
 sll.insertend(secondNode)
 fifth=Node(15)
-sll.insertpos(fifth,-1)
-sll.printList()
+# sll.insertpos(fifth,-1)
+# sll.printList()
