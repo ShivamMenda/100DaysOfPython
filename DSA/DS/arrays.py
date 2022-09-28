@@ -1,25 +1,25 @@
 #1-D array
 
-# print("enter n")
-# n=int(input())
-# arr=[]
-# print(f"Enter {n} elements")
-# for i in range(n):
-#     arr.append(int(input()))
+print("enter n")
+n=int(input())
+arr=[]
+print(f"Enter {n} elements")
+for i in range(n):
+    arr.append(int(input()))
 
-# print("The elements are")
-# for i in range(n):
-#     print(arr[i],end=" ")
+print("The elements are")
+for i in range(n):
+    print(arr[i],end=" ")
 
 #2-D array
-# r=int(input())
-# c=int(input())
-# arr=[[0 for col in range(c)] for row in range(r)]
+r=int(input())
+c=int(input())
+arr=[[0 for col in range(c)] for row in range(r)]
 
-# for row in range(r):
-#     for col in range(c):
-#         arr[row][col]=row*col
-# print(arr)
+for row in range(r):
+    for col in range(c):
+        arr[row][col]=row*col
+print(arr)
 
 #Delete an element
 
