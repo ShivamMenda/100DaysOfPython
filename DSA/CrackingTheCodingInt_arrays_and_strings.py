@@ -13,6 +13,17 @@ def isUnique(a):
 # s=str(input("Enter String to check:"))
 # print(isUnique(s))
 
+#1.3 URLify
+def urlify(a):
+    return a.strip().replace(" ","%20")
+
+# a=str(input("Enter"))
+# print(urlify(a))
+
+
+
+
+
 
 
 
